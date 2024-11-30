@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tense Detector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    .container {
+      max-width: 800px; 
+      margin: 0 auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+    textarea, button {
+      width: 100%;
+      margin: 15px 0;
+      padding: 15px; 
+      font-size: 18px;
+      border-radius: 6px; 
+      border: 1px solid #ccc;
+    }
+    textarea {
+      resize: vertical; 
+      height: 150px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .result {
+      font-size: 20px;
+      color: #333;
+      margin-top: 20px;
+      line-height: 1.6; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tense Detector</h1>
+    <textarea id="sentenceInput" placeholder="Enter sentences or a paragraph"></textarea>
+    <button onclick="detectTense()">Check Tense</button>
+    <div id="result" class="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
